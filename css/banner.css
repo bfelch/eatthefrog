@@ -1,0 +1,107 @@
+.banner {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	position: relative;
+	min-height: 40vh;
+}
+
+.banner-main {
+	background-image: url('/img/banners/frog_brown_green.jpg');
+	min-height: 100vh;
+}
+
+.banner-updates {
+	background-image: url('/img/banners/frog_brown_grey.jpg');
+}
+
+.banner-projects {
+	background-image: url('/img/banners/nara_temple.jpg');
+}
+
+.banner-activities {
+	background-image: url('/img/banners/ghibli_museum.jpg');
+}
+
+.banner-overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #00000044;
+}
+
+.banner-title h1 {
+	font-weight: 200;
+}
+
+.banner-condensed {
+	letter-spacing: 0.4em;
+}
+
+.nothing {
+	font-weight: 150;
+	letter-spacing: 0.4em;
+	text-align: center;
+}
+
+.center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.container {
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.thumbnail {
+	max-width: 300px;
+}
+
+.thumbnail a {
+	color: lightgrey;
+}
+
+.thumbnail h3 {
+	font-weight: 200;
+}
+
+body {
+	color: darkgrey;
+}
+
+a {
+	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+	.banner-title h1 {
+		color: white;
+		letter-spacing: 0.6em;
+		padding-left: 0.6em;
+		text-align: center;
+	}
+
+	.img-padding {
+		padding: 15px 40px 40px 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.banner-title h1 {
+		letter-spacing: 0.2em;
+		margin-bottom: 0;
+	}
+
+	.d-md-none .container {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
